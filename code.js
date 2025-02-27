@@ -26,6 +26,8 @@ function merge(arr, start1, end1, start2, end2) {
 }
 
 function mergesort(array) {
+  let return_array = [];
+
   if (array.length === 0) return;
 
   for (let size = 1; size < array.length; size *= 2) {
@@ -46,4 +48,8 @@ function mergesort(array) {
       end2 += 2 * size;
     }
   }
+
+  return_array = [...array];
+
+  return return_array;
 }
