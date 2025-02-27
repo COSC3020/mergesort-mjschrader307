@@ -26,6 +26,8 @@ function merge(arr, start1, end1, start2, end2) {
 }
 
 function mergesort(array) {
+  if (array.length === 0) return;
+
   for (let size = 1; size < array.length; size *= 2) {
     // Initialize positions
     let start1 = 0;
