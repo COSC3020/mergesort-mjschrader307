@@ -22,7 +22,7 @@ Worst case situation for mergesort: $\Theta(n^2log(n))$
 
 (The log(n) comes from doubling of subarrays, which should happen log<sub>2</sub>(n) times)
 
-I would assume that the average number of swaps for the merge operation is $\frac{n}{2}$, leading to the same complexity for the average case for merging, which was $\Theta(n^2)$. The number of subarray size is the same for all cases, so the average case for that is also $\Theta(log(n))$.
+I would assume that the average number of swaps for the merge operation is $\frac{n}{2}$, leading to the same complexity for the average case for merging, which was $\Theta(n^2)$. The number of subarray size doubling is the same for all cases, so the average case for that is also $\Theta(log(n))$.
 
 **Answer**: Putting those together gives me an average time complexity of $\Theta(n^2log(n))$ for my implementation of an iterative Merge Sort algorithm, which is _n_ times worse than that of the normal recursive version.
 
